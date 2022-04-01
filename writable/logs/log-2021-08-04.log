@@ -1,0 +1,14 @@
+CRITICAL - 2021-08-04 12:12:39 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\login-register-CodeIgniter4\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\login-register-CodeIgniter4\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\login-register-CodeIgniter4\system\Validation\Rules.php(240): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\login-register-CodeIgniter4\system\Validation\Validation.php(325): CodeIgniter\Validation\Rules->is_unique('anks1245@gmail....', 'user_email', Array, NULL)
+#4 C:\xampp\htdocs\login-register-CodeIgniter4\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('email', 'email', 'anks1245@gmail....', Array, Array)
+#5 C:\xampp\htdocs\login-register-CodeIgniter4\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#6 C:\xampp\htdocs\login-register-CodeIgniter4\app\Controllers\Register.php(28): CodeIgniter\Controller->validate(Array)
+#7 C:\xampp\htdocs\login-register-CodeIgniter4\system\CodeIgniter.php(918): App\Controllers\Register->save()
+#8 C:\xampp\htdocs\login-register-CodeIgniter4\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 C:\xampp\htdocs\login-register-CodeIgniter4\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\login-register-CodeIgniter4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\login-register-CodeIgniter4\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#12 {main}
